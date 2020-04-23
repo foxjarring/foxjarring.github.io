@@ -1,0 +1,361 @@
+@charset "Shift_Jis";
+
+
+/* ──────────────────────────────
+	Other-no01(2008.07.10/2008.10.01 修正)
+	Chat x Cat
+	http://chatxcat.halfmoon.jp/
+────────────────────────────── */
+
+
+/*/////////////// 全体 /////////////////////////*/
+
+*{
+margin:0;
+padding:0;
+font:normal normal normal 100%/1.6 "MS UI Gothic","ヒラギノ角ゴ Pro W3",Osaka,"ＭＳ Ｐゴシック",Verdana,sans-serif;
+border:0;
+}
+
+html{
+margin:0 0 1px;
+height:100%;
+scrollbar-arrow-color:#999;
+scrollbar-face-color:#fff;
+scrollbar-track-color:#eee;
+scrollbar-highlight-color:#fff;
+scrollbar-shadow-color:#999;
+scrollbar-3dlight-color:#fff;
+scrollbar-darkshadow-color:#fff;
+}
+
+body{
+background:#fff;
+width:100%;
+color:#111;
+font-size:90%;
+text-align:center;
+}
+
+
+/*/////////////// アンカー /////////////////////////*/
+
+a{
+text-decoration:none;
+}
+
+a:link{
+color:#111;
+text-decoration:underline;
+}
+
+a:visited{
+color:#6f6f6f;
+text-decoration:underline;
+}
+
+a:hover{
+text-decoration:none;
+}
+
+
+
+/*/////////////// 見出し /////////////////////////*/
+
+h1{}
+
+h2{
+margin:10px 0 30px;
+padding:0 5px 0 0;
+text-align:right;
+border-bottom:1px solid #111;
+}
+
+h3{
+margin:2.3em 0 1em;
+padding:0 0 0 5px;
+border-left:6px solid #111;
+}
+
+h4{
+margin:8px 0;
+padding:0 0 0 0.2em;
+border-bottom:1px dotted #c5c5c5;
+}
+
+
+/*/////////////// リスト /////////////////////////*/
+
+ul,ol{
+margin:0 0 0 2.1em;
+}
+
+ul li{
+list-style-type:square;
+}
+
+ul.rows,ol.rows{
+margin:0 0 0 0.8em;
+}
+
+ul.rows li,ol.rows li{
+margin:0 0.2em 0 0;
+display:inline;
+list-style-type:none;
+}
+
+dl{
+margin:0.3em 0.5em;
+}
+
+dt{
+margin:0.4em 0 0;
+}
+
+dd{
+margin:0 0 0 0.5em;
+border-left:3px solid #111;
+}
+
+
+/*/////////////// レイアウト /////////////////////////*/
+
+/* ----- ラッパー ------------- */
+
+#WRAPPER{
+padding:30px 0 15px;
+width:100%;
+text-align:center;
+}
+
+
+/* ----- ヘッダー ------------- */
+
+h1#HEADER{
+padding:15px 0 0 10%;
+height:1%;	/* 081125/追加（For IE） */
+text-align:left;
+border-bottom:5px solid #111;
+}
+
+h1{
+font-size:150%;
+font-family:"ＭＳ 明朝","細明朝体","Times New Roman",serif;
+}
+
+h1:first-letter {
+color:#59b9c6;
+font-size:130%;
+font-family:"ＭＳ 明朝","細明朝体","Times New Roman",serif;
+}
+
+
+/* ----- ノベル ------------- */
+
+#NOVEL{
+margin:15px auto 0;
+width:70%;
+text-align:left;
+}
+
+/* --- 続く・了 --- */
+
+p.continue{
+margin:70px 0 0;
+text-align:center;
+}
+
+/* --- 記載日 --- */
+
+p.date{
+text-align:right;
+}
+
+ul.skip{
+margin:10px 5px 0;
+text-align:right;
+}
+
+/* --- トップへ戻り --- */
+
+.skip li{
+list-style-type:none;
+}
+
+.skip li a{
+border-bottom:none;
+}
+
+/* --- ナビゲーション --- */
+
+ul.navigation{
+margin:50px 0 20px;
+font-size:80%;
+text-align:center;
+}
+
+.navigation li,.navigation li a:link,.navigation li a:visited{
+font-family:Verdana,sans-serif;
+}
+
+.navigation li{
+margin:0 5px;
+display:inline;
+list-style-type:none;
+}
+
+.navigation li a:link,.navigation li a:visited{
+padding:0 5px;
+background:#111;
+color:#fff;
+text-decoration:none;
+}
+
+.navigation li a:hover{
+background:transparent;
+color:#111;
+}
+
+/* --- 後書 --- */
+
+.afterword{
+font-size:90%;
+border-top:1px solid #111;
+}
+
+.afterword p{
+margin:10px 5px 0;
+line-height:130%;
+color:#6f6f6f;
+}
+
+
+/* ----- フッター ------------- */
+
+#FOOTER{
+margin:25px 0 0;
+font-size:85%;
+text-align:center;
+border-top:5px solid #111;
+}
+
+#FOOTER ul{
+margin:10px 0 0;
+}
+
+#FOOTER address,#FOOTER li{
+padding:0 2px;
+display:inline;
+list-style-type:none;
+}
+
+
+/*////////////////////////////////////////*/
+
+/* ----- 段落・水平線 ------------- */
+
+p{
+margin:0.2em 0.3em 0.6em;
+}
+
+hr{
+display:none;
+}
+
+
+/* ----- 強調・追加・削除 ------------- */
+
+em{
+padding:0 2px;
+color:#a22041;
+}
+
+strong{
+padding:0 2px;
+color:#a22041;
+font-size:120%;
+font-weight:bold;
+}
+
+ins{
+text-decoration:underline;
+}
+
+del{
+text-decoration:line-through;
+}
+
+
+/* ----- 引用 ------------- */
+
+blockquote{
+padding:0 0.5em;
+background:#eee;
+border:1px solid #ccc;
+}
+
+blockquote p{
+color:#333;
+}
+
+q{
+padding:0 2px;
+quotes: "<" ">" "`""'";
+}
+
+q:before{
+content:open-quote;
+}
+
+q:after{
+content:close-quote;
+}
+
+
+/* ----- 整形済みテキスト ------------- */
+
+pre{
+overflow:auto;
+margin:0.7em auto; 
+padding:5px;
+height:100px;
+border:1px solid #555;
+}
+
+
+/* ----- 物理要素 ------------- */
+
+b{
+font-weight:bold;
+}
+
+i{
+font-style:oblique;
+}
+
+big{
+font-size:140%;
+}
+
+small{
+font-size:80%;
+}
+
+
+/*/////////////// その他 /////////////////////////*/
+
+/* ----- 効果 -------------------- */
+
+p.effect_01{	/* インデント（字下げ） */
+margin:0 3em;
+color:#8f8f8f;
+}
+
+p.effect_02{	/* 中央寄せ */
+color:#33cccc;
+text-align:center;
+}
+
+p.effect_03{	/* 右寄せ */
+text-align:right;
+}
