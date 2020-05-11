@@ -272,6 +272,7 @@ h1,
 h2 {
     font-family: 'Lustria', serif;
     font-weight: normal;
+    word-wrap: break-word;
 }
 
 nav {
