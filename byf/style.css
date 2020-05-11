@@ -1,0 +1,474 @@
+@charset "utf-8";
+@import url("html5reset-1.6.1.css");
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+
+/*--------------------テンプレート情報--------------------*/
+/*template　Maison de R*/
+/*url　https://maisonder.web.fc2.com/*/
+/*title　Hortensia*/
+/*code　CSS3*/
+
+/*--------------------ライセンス--------------------*/
+
+/*HTML5 Reset Stylesheet
+html5doctor.com Reset Stylesheet v1.6.1
+http://html5doctor.com/html-5-reset-stylesheet/
+Copyright Richard Clark - http://richclarkdesign.com
+Released under the CC0 Public Domain Dedication and MIT License
+http://opensource.org/licenses/mit-license.php
+*/
+
+/*
+jQuery v3.3.1
+http://jquery.com/
+(c) JS Foundation and other contributors
+Released under the MIT license
+http://jquery.org/license
+http://opensource.org/licenses/mit-license.php
+*/
+
+/*
+jQuery Smooth scroll
+Handy Web Design
+https://handywebdesign.net/2017/10/jquery-smooth-scroll/
+*/
+
+/*
+Google Fonts
+"Lustria" is lisenced under the SIL Open Font License
+http://scripts.sil.org/OFL
+by https://fonts.google.com/(MADType)
+*/
+
+/*
+Font Awesome(Font License)
+"font-awesome" is lisenced under the SIL Open Font License 1.1
+http://scripts.sil.org/OFL
+https://fontawesome.com/v4.7.0/
+*/
+
+/*
+Font Awesome(Code License)
+https://fontawesome.com/v4.7.0/
+Released under the MIT license
+https://fontawesome.com/v4.7.0/license/
+http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------PCファーストで記述------------*/
+
+/*リセット&初期設定の追加*/
+* {
+    /*paddingとborderを幅と高さに含める*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*プラットフォームのスタイルをリセット*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /*単語の途中でも必ず改行される*/
+    word-break: break-all;
+}
+
+html {}
+
+body {
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Verdana, sans-serif;
+    font-size: 12px;
+    background: url(bg01.png) repeat #F2F4DE;
+    color: #333333;
+    /*モバイル端末でのテキストサイズの自動調整対策*/
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+a {
+    color: #709764;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    /*アニメーション*/
+}
+
+a:hover {
+    color: #A6BE8A;
+}
+
+img {
+    /*フルードイメージ（親要素の幅に応じて縦横比を保持したまま自動的に画像の拡大縮小をする）*/
+    max-width: 100%;
+    height: auto;
+    /*画像の縦の隙間対策*/
+    vertical-align: bottom;
+}
+
+a img {
+    /*画像リンクの枠線を消す*/
+    border: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+    /*リストマークを内側に表示*/
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+input,
+textarea {
+    /*フォーム入力エリア*/
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Verdana, sans-serif;
+    /*bodyの値と合わせること*/
+    resize: none;
+    /*領域のサイズを変更させない*/
+    line-height: 1.8;
+    /*bodyの値と合わせること*/
+    letter-spacing: 0.05em;
+    /*bodyの値と合わせること*/
+    font-size: 12px;
+    /*bodyの値と合わせること*/
+    color: #333333;
+    /*bodyの値と合わせること*/
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+}
+
+/*スペース*/
+.space {
+    margin-top: 6px;
+}
+
+/*emとstrong一括*/
+em,
+strong {
+    padding: 0 0.5em;
+}
+
+/*強調*/
+em {
+    background: #F2F4DE;
+}
+
+/*重要*/
+strong {
+    background: #A6BE8A;
+    color: white;
+}
+
+/*リスト*/
+
+/*ul1 縦並びテキスト画像用*/
+.ul1 {}
+
+.ul1 li {}
+
+.ul1 li img {
+    margin: 6px 0;
+    line-height: 1;
+}
+
+/*ul2 横並びテキスト用*/
+.ul2 {
+    font-size: 0;
+    /*隙間対策*/
+}
+
+.ul2 li {
+    font-size: 12px;
+    /*bodyのfont-sizeと同じ値を入れてください*/
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.ul2 li:last-child {
+    margin-right: 0;
+}
+
+/*ul3 横並び画像用*/
+.ul3 {
+    font-size: 0;
+    /*隙間対策*/
+}
+
+.ul3 li {
+    line-height: 1;
+    font-size: 12px;
+    /*bodyのfont-sizeと同じ値を入れてください*/
+    display: inline-block;
+    margin: 6px 12px 6px 0;
+}
+
+.ul3 li:last-child {
+    margin-right: 0;
+}
+
+/*定義リスト*/
+/*dl1*/
+.dl1 {
+    border-left: 1px solid #F2F4DE;
+    padding-left: 1em;
+}
+
+.dl1 dt {
+    margin-top: 1em;
+}
+
+.dl1 dt:first-child {
+    margin-top: 0;
+}
+
+/*装飾ボックス*/
+.box {
+    border: 1px solid #e5e5e5;
+    padding: 1em;
+}
+
+/*フォーム*/
+/*form1*/
+.form1 {
+    width: 100%;
+    max-width: 350px;
+}
+
+.form1 .spanform {
+    /*項目*/
+    display: block;
+    width: 100px;
+}
+
+.form1 input,
+.form1 textarea {
+    /*入力エリア*/
+    margin-top: 0.5em;
+    padding: 0.5em;
+    width: 100%;
+    display: block;
+}
+
+.form1 .button {
+    /*送信ボタン*/
+    width: 100px;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+/*フォント*/
+h1,
+h2 {
+    font-family: 'Lustria', serif;
+    font-weight: normal;
+}
+
+nav {
+    font-family: 'Lustria', serif;
+}
+
+/*レイアウト*/
+
+/*全体*/
+#all {}
+
+#wrap1 {
+    padding: 0 35px;
+}
+
+#wrap2 {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 35px;
+    margin: 0 auto;
+    background: white;
+}
+
+/*ヘッダー*/
+header {
+    text-align: center;
+}
+
+/*ナビ*/
+nav {
+    margin-top: 20px;
+}
+
+nav #navlist {
+    font-size: 0;
+    /*隙間対策*/
+}
+
+nav #navlist li {
+    font-size: 15px;
+    /*再指定*/
+    display: inline-block;
+    margin: 10px;
+}
+
+nav #navlist li a {
+    display: block;
+    /*リンク範囲の拡張*/
+    background: #F2F4DE;
+    width: 150px;
+    padding: 0 15px;
+    line-height: 28px;
+}
+
+nav #navlist li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+nav #navlist li a:hover {
+    background: #A6BE8A;
+    color: white;
+}
+
+/*タイトル*/
+header h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #333333;
+}
+
+/*小見出し*/
+section h1 {
+    font-size: 16px;
+    margin-bottom: 1.2em;
+    background: url(laceline.png) repeat-x;
+    height: 35px;
+    line-height: 35px;
+}
+
+section h2 {
+    font-size: 16px;
+    margin-bottom: 1.2em;
+    line-height: 1;
+}
+
+section h2:before {
+    /*FontAwesome*/
+    color: #A6BE8A;
+    content: "\f101";
+    margin-right: 0.5em;
+    font-family: FontAwesome;
+}
+
+/*メイン*/
+#main {}
+
+/*セクション*/
+section {}
+
+#main .section1 {
+    /*セクション1*/
+    margin-top: 5px;
+    padding-top: 25px;
+}
+
+#main .section2 {
+    /*セクション2*/
+    margin-top: 30px;
+}
+
+/*本文*/
+/*必要に応じて追加*/
+section p,
+section ul,
+section ol,
+section dl,
+section table,
+section form,
+section .box {
+    margin-top: 12px;
+    /*emではfont-size:0の箇所が無効になるためpxで指定*/
+    /*bodyのfont-sizeのpxと同じ値を指定してください*/
+}
+
+/*必要に応じて追加*/
+section p:first-child,
+section ul:first-child,
+section ol:first-child,
+section dl:first-child,
+section table:first-child,
+section form:first-child,
+section .box:first-child {
+    margin-top: 0;
+}
+
+/*フッター*/
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer ul {
+    font-size: 0;
+    /*隙間対策*/
+}
+
+footer ul li {
+    font-size: 12px;
+    /*隙間対策 再指定*/
+    display: inline-block;
+    /*横並び*/
+    margin: 0.2em 0.5em;
+}
+
+footer ul li span {
+    margin-right: 0.5em;
+}
+
+/*ページトップボタン*/
+.pagetop {
+    margin-top: 30px !important;
+    text-align: right;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.pagetop a {
+    text-decoration: none;
+}
+
+/*------------画面サイズ768px以下用（スマホ向け）------------*/
+@media screen and (max-width:768px) {
+
+    body {
+        background: none white;
+    }
+
+    #wrap1 {
+        padding: 0;
+    }
+
+    #wrap2 {
+        max-width: 700px;
+        padding: 28px 15px 30px;
+    }
+
+    header::before {
+        content: url(mainvisual.png);
+        display: block;
+    }
+
+}
+
+/*ベンダープレフィックス設定済*/
+/*エラーチェック済*/
