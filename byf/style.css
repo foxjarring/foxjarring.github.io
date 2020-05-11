@@ -66,7 +66,7 @@ http://opensource.org/licenses/mit-license.php
     -webkit-appearance: none;
     -moz-appearance: none;
     /*単語の途中でも必ず改行される*/
-    word-break: break-all;
+    word-break: break-word;
 }
 
 html {}
@@ -83,7 +83,6 @@ body {
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    word-wrap: break-word;
 }
 
 a {
@@ -272,7 +271,6 @@ h1,
 h2 {
     font-family: 'Lustria', serif;
     font-weight: normal;
-    word-wrap: break-word;
 }
 
 nav {
