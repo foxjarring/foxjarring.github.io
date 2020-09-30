@@ -1,0 +1,28 @@
+#records {
+    margin-top: 10px;
+}
+
+.record {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 5px 5px 5px grey;
+    border-color: gray;
+    background: #fdffe3;
+    font: 16px "Arial";
+}
+
+.record > div {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.record > div:last-child {
+    font: 16px "momotyped";
+    padding-top: 5px;
+}
+
+.record-edit.checked {
+    background-color: lightcoral;
+}
