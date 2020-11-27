@@ -1,5 +1,3 @@
-# foxjarring.github.io
-
 # hi
 
 # I just liking making sites and stuff
