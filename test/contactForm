@@ -1,0 +1,59 @@
+            <section id="contact-section">
+              <div id="container07" class="container default full">
+                <div class="wrapper">
+                  <div class="inner">
+                    <ul id="links12" class="links">
+                      <li><a href="#home">← Back</a></li>
+                    </ul>
+                    <h2 id="text02">Contact</h2>
+                    <form id="form01" method="post">
+                      <div class="inner">
+                        <div class="field">
+                          <input type="text" name="name" id="form01-name" placeholder="Name" maxlength="128" required />
+                        </div>
+                        <div class="field">
+                          <input type="email" name="email" id="form01-email" placeholder="Email" maxlength="128" required />
+                        </div>
+                        <div class="field">
+                          <input type="text" name="fname" id="form01-fname" placeholder="Fname" maxlength="128" />
+                        </div>
+                        <div class="field">
+                          <textarea data-gramm_editor="false" name="message" id="form01-message" placeholder="Message" maxlength="16384" required>
+                          </textarea>
+                        </div>
+                        <div class="field">
+                          <div class="checkbox">
+                            <input type="checkbox" name="consent" id="form01-consent" value="checked" required />
+                            <label for="form01-consent">
+                              <span>I accept the above information will be used to contact me.</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="actions">
+                          <button type="submit">Submit</button>
+                        </div>
+                      </div>
+                      <input type="hidden" name="id" value="form01" />
+                    </form>
+                    <ul id="links13" class="links">
+                      <li><a href="#home">← Back</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="contact-done-section">
+              <div id="container02" class="container default full">
+                <div class="wrapper">
+                  <div class="inner">
+                    <ul id="links08" class="links">
+                      <li><a href="#home">← Back</a></li>
+                    </ul>
+                    <p id="text03">Your message has been sent.</p>
+                    <ul id="links01" class="links"><li>
+                      <a href="#home">← Back</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
